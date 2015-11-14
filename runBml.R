@@ -1,21 +1,12 @@
 rm(list = ls())
-#system("rm bml.gif")
-#x  <- list.files()
-#x2 <- x[grep("bmlX", x)]
-#sapply(x2, function(x3){
-#		m = paste0(c("rm ", x3), collapse = "")
-#		system(m)
-#		invisible(NULL)})
 library(dplyr)
 library(animation)
 library(ggplot2)
 library(ggthemes)
 source("BML.R")
 
-#createGrid <- createBMLGrid(200,200,.35)
-#runProcess <- runBMLGrid(createGrid, 50)
-
-
+createGrid <- createBMLGrid(200,200,.35)
+runProcess <- runBMLGrid(createGrid, 50)
 
 newBML <- function(prop, newGIF = TRUE, nSteps = 130){
 	newGrid <- createBMLGrid(140,140, prop)
@@ -24,7 +15,7 @@ newBML <- function(prop, newGIF = TRUE, nSteps = 130){
 }
 
 diffProp  <- c(.20, .35, .45, .55, .65, .80)
-#sapply(diffProp, newBML)
+sapply(diffProp, newBML)
 
 #Velocity Viz
 stepCount <- 2000
