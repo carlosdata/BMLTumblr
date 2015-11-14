@@ -9,5 +9,5 @@ Files:
   * No Data
 
 Learn about this model @
-Blog URL: [CoffeeandData](http://www.Coffeeanddata.tumblr.com)
+Blog URL: [CoffeeandData](coffeeanddata.tumblr.com)
 
