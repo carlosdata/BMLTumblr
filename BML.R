@@ -15,8 +15,6 @@ createBMLGrid   <- function(r, c,p){
 }
 
 
-
-
 moveDot    <- function(mainMatrix, carColor, carList, mainColumn, wrapTest){
 	carIndex <-  which(carList  == carColor)
   
@@ -93,5 +91,3 @@ plotVelocity  <- function(ind, movedVelocity, len){
        	pch = '*', ylim = c(0,1), xlim = c(0,len),
        	ylab = 'Velocity Proportion', xlab = tempLabel)
 }
-
-
